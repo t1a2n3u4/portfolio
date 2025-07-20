@@ -28,7 +28,9 @@ menu.addEventListener("click", function(){
     sideBar.classList.remove("close-sidebar")
     sideBar.classList.add("open-sidebar")
 });
-
+ document.getElementById("scrollToContact").addEventListener("click", function () {
+    document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+  });
 closeIcon.addEventListener("click", function(){
     sideBar.classList.remove("open-sidebar");
     sideBar.classList.add("close-sidebar");
